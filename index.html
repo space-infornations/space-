@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Blog - Explore the Universe</title>
+    <meta name="description" content="Your daily dose of space, galaxies, and cosmic wonders. Explore the universe with us through our blog, articles, and resources.">
+    <meta name="keywords" content="space, blog, cosmic, universe, galaxies, planets, science, astronomy">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cosmicblog.com/">
+    <meta property="og:title" content="Cosmic Blog - Explore the Universe">
+    <meta property="og:description" content="Your daily dose of space, galaxies, and cosmic wonders.">
+    <meta property="og:image" content="https://www.cosmicblog.com/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.cosmicblog.com/">
+    <meta property="twitter:title" content="Cosmic Blog - Explore the Universe">
+    <meta property="twitter:description" content="Your daily dose of space, galaxies, and cosmic wonders.">
+    <meta property="twitter:image" content="https://www.cosmicblog.com/assets/og-image.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Cosmic Blog Logo">
+                    <span>Cosmic Blog</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="galaxies.html">Galaxies</a></li>
+                <li><a href="missions.html">Space Missions</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search the cosmos...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the Universe with Us</h1>
+            <p>Your daily dose of space, galaxies, and cosmic wonders.</p>
+            <a href="blog.html" class="cta-button">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="featured-posts">
+        <h2>Featured Posts</h2>
+        <div class="post-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="planets">Planets</button>
+            <button class="filter-btn" data-filter="galaxies">Galaxies</button>
+            <button class="filter-btn" data-filter="science-news">Science News</button>
+            <button class="filter-btn" data-filter="space-missions">Space Missions</button>
+        </div>
+        <div class="posts-grid">
+            <!-- Post Card 1 -->
+            <div class="post-card" data-category="planets">
+                <img src="assets/planet-thumb.jpg" alt="Planet">
+                <div class="card-content">
+                    <h3>The Mysteries of the Red Planet</h3>
+                    <p class="author">By Dr. Evelyn Reed</p>
+                    <p class="date">July 20, 2024</p>
+                    <p class="summary">A deep dive into the latest discoveries about Mars and its potential for life.</p>
+                </div>
+            </div>
+            <!-- Post Card 2 -->
+            <div class="post-card" data-category="galaxies">
+                <img src="assets/galaxy-thumb.jpg" alt="Galaxy">
+                <div class="card-content">
+                    <h3>Andromeda: Our Galactic Neighbor</h3>
+                    <p class="author">By Prof. Kenji Tanaka</p>
+                    <p class="date">July 18, 2024</p>
+                    <p class="summary">Exploring the Andromeda galaxy and its eventual collision with the Milky Way.</p>
+                </div>
+            </div>
+            <!-- Post Card 3 -->
+            <div class="post-card" data-category="science-news">
+                <img src="assets/news-thumb.jpg" alt="Science News">
+                <div class="card-content">
+                    <h3>New Exoplanet Discovery</h3>
+                    <p class="author">By Dr. Evelyn Reed</p>
+                    <p class="date">July 15, 2024</p>
+                    <p class="summary">Scientists have discovered a new Earth-like exoplanet in the habitable zone of a nearby star.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Cosmic Blog. All rights reserved.</p>
+    </footer>
+
+    <!-- Go to Top Button -->
+    <a href="#" class="go-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="js/main.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>

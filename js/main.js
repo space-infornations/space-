@@ -6,6 +6,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Cosmic Blog is ready to launch!');
 
+    // Website Loader
+    const loader = document.querySelector('.loader-wrapper');
+    window.addEventListener('load', () => {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500);
+    });
+
     // Initialize Particles.js for the animated background
     if (document.getElementById('particles-js')) {
         particlesJS('particles-js', {

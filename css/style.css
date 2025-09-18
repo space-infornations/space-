@@ -88,6 +88,11 @@ a:hover {
     border-radius: 0 20px 20px 0;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar input:hover, .search-bar button:hover {
+    box-shadow: 0 0 10px #00ffff;
 }
 
 /* Hero Section */
@@ -455,6 +460,99 @@ footer {
 .timeline-item.visible .timeline-content {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Resources Page */
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.resource-item {
+    background: rgba(20, 20, 40, 0.8);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* About Page */
+.about-content {
+    text-align: center;
+}
+
+.team-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-card {
+    background: rgba(20, 20, 40, 0.8);
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ffff;
+}
+
+/* Go to Top Button */
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ffff;
+    color: #00001a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.go-to-top:hover {
+    background-color: #ff00ff;
+    transform: scale(1.1);
+}
+
+/* Loader */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00001a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #00ffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* Responsive Design */
